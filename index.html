@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+
+        <div><img src="./img/logo_EN.png" alt="Unistral"></div>
+        <div class="offers"><h1>Call for internship offers</h1></div>
+        <div><img src="./img/ufazLogo.jpg" alt="UFAZ"></div>
+</header>
+
+<main>
+    <div class="container main-top mb-3">
+        <div class="row">
+            <div class="col-md-8 mt-3">
+                <nav>
+                    <div class="nav nav-tabs" role="tablist">
+                        <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home"
+                           role="tab" aria-controls="nav-home" aria-selected="true">Company</a>
+                        <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile"
+                           role="tab" aria-controls="nav-profile" aria-selected="false">Project</a>
+                        <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact"
+                           role="tab" aria-controls="nav-contact" aria-selected="false">Terms and conditions</a>
+                    </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                        <div>
+                            <form id="first-form">
+                                <label class="mt-3" for="com-name">Company Name:</label>
+                                <input name="ad" class="w-100" type="text" id="com-name" required>
+
+                                <label class="mt-4" for="com-details">Contact details of the company:</label>
+                                <input name="adress" class="w-25 mr-3" type="text" id="com-details" required placeholder="Address">
+                                <input name="number" title="Example: 000-000-00-00" class="w-25 mr-3" type="tel" required placeholder="Phone Number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}">
+                                <input name="url" class="w-25" type="url" required placeholder="Website">
+
+                                <label class="mt-4" for="com-profile">Company Profile:</label>
+                                <input name="choise" type="radio" id="com-profile" checked>
+                                <span class="mr-2"> Public</span>
+                                <span>/</span>
+                                <input name="choise" class="ml-2" type="radio">
+                                <span> Private</span>
+                                <input class="ml-5" name="choise-2" type="radio" checked>
+                                <span class="mr-2"> Local</span>
+                                <span>/</span>
+                                <input name="choise-2" class="ml-2" type="radio">
+                                <span> International</span>
+                                <input class="ml-5" name="choise-3" type="radio" checked>
+                                <span class="mr-2"> Small</span>
+                                <span>/</span>
+                                <input name="choise-3" class="ml-2" type="radio">
+                                <span class="mr-2"> Medium</span>
+                                <span>/</span>
+                                <input name="choise-3" class="ml-2" type="radio">
+                                <span> Large</span>
+
+                                <label class="mt-4" for="activity">Main field of activity:</label>
+                                <input name="activity" class="w-100" type="text" id="activity" required>
+                                <label class="mt-3" for="contact">Contact person in the company:</label>
+                                <input name="contact" type="text" id="contact" placeholder="Name" required>
+                                <input name="surname" type="text" placeholder="Surname" required>
+                                <input name="position" type="text" placeholder="Position" required>
+                                <input name="email" type="email" placeholder="Email" required>
+                                <button class="pass btn btn-success" type="submit" >Next </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                        <form id="second-form">
+                            <label class="mt-3" for="suggest">Suggested project / topic of the internship (brief description of tasks
+                                to be performed so that the
+                                students have enough information to choose your internship):
+                            </label>
+                            <textarea name="project" id="suggest" cols="100%" rows="8"></textarea>
+
+                            <label class="mt-4" for="project-number">Possible number of trainees on this project (if large project):</label>
+                            <input name="project-number" class="w-100" type="number" id="project-number">
+                            <label class="note" for="project-number">(Note: that combining specialty students can be a good idea, cf. below for UFAZ specialties.)
+                            </label>
+
+                            <label class="mt-4" for="interests">UFAZ specialties of interest for the company — tick the boxe(s):</label>
+                            <input name="interest" id="interests" type="checkbox" checked> <span>Chemical engineering</span> <br>
+                            <input name="science"  type="checkbox"> <span>Computer Science</span> <br>
+                            <input name="engineering"  type="checkbox"> <span>Geosciences – Geophysics engineering</span> <br>
+                            <input name="oil"  type="checkbox"> <span>Oil and Gas engineering</span> <br>
+
+                            <label class="mt-4" for="conducted">Company department in which the internship will be conducted:</label>
+                            <input name="conducted" class="w-100" type="text" id="conducted" required>
+
+                            <label class="mt-4" for="location">Location of the internship (if different from company address):</label>
+                            <input name="location" class="w-100" type="text" id="location">
+
+                            <label class="mt-4" for="date">Internship dates:</label>
+                            <span>From:</span>
+                            <input name="disable" type="number" id="date" placeholder="02/03/2020" disabled>
+                            <span>Till:</span>
+                            <input name="date" type="date" placeholder="Example : 20/05/2020" pattern="[0-9]{2}/[0-9]{2}/[0-9]{4}" min="2020-05-03">
+                            <br>
+
+                            <input name="pass" class="pass btn btn-success" type="submit" value="Next" >
+                        </form>
+                    </div>
+                    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                        <form id="last-form" action="post.php" method="post">
+                            <label class="mt-4" for="duration">Duration:</label>
+                            <input name="week" type="number" id="duration" min="10" placeholder="Min: 10 week" required>
+
+                            <label class="mt-4" for="intern">The internship will be:</label>
+                            <input name="paid" type="radio" id="intern" checked>
+                            <span class="mr-2"> Paid</span>
+                            <span>/</span>
+                            <input name="paid" class="ml-2" type="radio">
+                            <span> Not Paid</span> <br>
+                            <span class="note">If paid internship - how much per month? (paid internships will attract good students)</span>
+                            <br>
+
+
+                            <label class="mt-4" for="insurance">Will the company provide insurance to the trainee(s)?</label>
+                            <input name="yes" type="radio" id="insurance" checked>
+                            <span class="mr-2"> Yes</span>
+                            <span>/</span>
+                            <input name="yes" class="ml-2" type="radio">
+                            <span> No</span>
+
+                            <label class="mt-4" for="selection">Main selection criteria for the company:</label>
+                            <textarea name="skills" id="selection" cols="100%" rows="6" placeholder="ex: language skills, academic results, motivation letter, etc"></textarea>
+
+                            <label class="mt-4" for="support">Would the company like UFAZ administration support in selection process:</label>
+                            <input class="sec" value="1" name="no" type="radio" id="support" >
+                            <span class="mr-2"> Yes</span>
+                            <span>/</span>
+                            <input name="no" value="0" class="ml-2 sec" type="radio" checked>
+                            <span> No</span>
+
+                            <label style="display: none" class="mt-4 box" for="screen">In this case, what kind of support is expected from UFAZ?</label>
+                            <textarea class="box" name="screen" id="screen" cols="100%" rows="6" placeholder="ex: CV screening, interviews"></textarea>
+
+                            <label class="mt-4" for="number-cv">Maximum number of CVs that can be sent by UFAZ to the company for the pre-selection:</label>
+                            <input name="number-cv" type="number" id="number-cv" required>
+
+                            <label class="mt-4" for="comments" >Other comments:</label>
+                            <textarea placeholder="ex. any specific procedures to be done before being accepted to the internship?" name="comment" id="comments" cols="100%" rows="6"></textarea>
+
+                            <button id="button" name="send" class="pass btn btn-success" type="submit">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mt-3 mb-5">
+                    <div class="col-md-12 main-right title">
+                        <h4 class="text-center">UFAZ News</h4>
+                    </div>
+                <div class="col-md-12 main-border border-top-0">
+                    <div class="news">
+                        <img class="img-fluid" src="./img/csm_bakou_kern_01_65049fb7dc.jpg" alt=""> <br>
+                        <a target="_blank" href="https://en.unistra.fr/index.php?id=21579&tx_ttnews%5Btt_news%5D=13018&L=0&cHash=e473f6b0a83262024b0b0e0cdc93331b">The French-Azerbaijan University is destined
+                            to increase in power</a>
+
+                        <img class="img-fluid" src="./img/76760020_2496135723768926_6414547769838534656_o.jpg" alt=""> <br>
+                        <a target="_blank" href="https://ufaz.az/en/news/ufaz-students-ranked-at-the-3rd-place-on-the-44th-international-collegiate-programming-contest-icpc/">
+                            UFAZ students ranked at the 3rd place on the 44th International Collegiate Programming Contest (ICPC)
+                        </a>
+
+                        <img class="img-fluid" src="./img/IMG_6380.jpg" alt=""> <br>
+                        <a target="_blank" href="https://ufaz.az/en/news/the-newly-appointed-ambassor-of-france-to-azerbaijan-visited-ufaz/">
+                            The newly appointed Ambassador of France to Azerbaijan visited UFAZ
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="container">
+    <div>
+        <strong>Please send us back the form by e-mail to:</strong>
+    </div>
+    <div class="footer-content">
+        <p>Latifa Nasibova, Head of Educational Department</p>
+        <p>Latifa.nasibova@ufaz.az </p>
+        <p> +994 12 599 00 74 </p>
+    </div>
+</footer>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/core.js"></script>
+</body>
+</html>
